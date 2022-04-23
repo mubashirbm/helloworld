@@ -1,0 +1,146 @@
+*{
+	list-style: none;
+	text-decoration: none;
+	max-width: 1024px;
+}
+.wrapper{
+	max-width: 980px;
+	width: 90%;
+	margin: 0 auto;
+	
+}
+header{
+	height: 100px;
+	width: 1024px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 40px;
+}
+header h1{
+	width: 50px;
+	margin-right: 100px;
+}
+header h1 a{
+	display: block;
+	width: 100%;
+}
+header h1 a img{
+	display: block;
+	width: 100%;
+}
+header ul{
+	display: flex;
+}
+header ul li{
+	padding: 10px 20px ;
+	background: #2f2f3d;
+	border-radius: 20px;
+	margin-right: 10px;
+
+}
+header ul li a{
+	color: #fff;
+}
+header form{
+	width: 60%;
+
+}
+header form input{
+	width: 60%;
+
+}
+header form button{
+	width: 10%;
+}
+#gallery{
+
+}
+#gallery ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+#gallery ul li {
+	width: 40%;
+
+}
+#gallery ul li a img{
+	display: block;
+	width: 100%;
+	height: 300px;
+	margin-bottom: 50px;
+}
+#gallery div{
+
+
+}
+#gallery div{
+	background: red;
+	width: 300px;
+	height: 300px;
+	transition: all 1s ease-in 1s;
+	animation: bounce 5s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+}
+@keyframes bounce {
+	0%{
+		transform: scale(.2);
+	}
+	40%{
+		transform: scale(1);
+	}
+	70%{
+		transform: scale(1.5);
+		opacity: .5;
+	}
+	100%{
+		transform: scale(1);
+	}
+	
+}
+@media only screen and (max-width: 980px){
+	header{
+		width: 900px;
+	}
+	header ul li{
+		width: 50%
+		padding: 10px 10px;
+
+	}
+	header ul li a{
+		font-size: 8px;
+	
+	}
+}
+@media only screen and (max-width: 768px) {
+	header form button{
+		width: 15%;
+		font-size: 12px;
+	}
+	header ul li{
+		width: 50%
+		padding: 10px 10px;
+	}
+	header ul li a{
+		font-size: 10px;
+	}
+	header{
+		width: 700px;
+	}
+	#gallery{
+		width: 768px;
+	}
+	.wrapper{
+		width: 90%;
+		max-width: 768px;
+		
+	}
+	#gallery ul li{
+		width: 100%;
+
+	}
+	
+}
